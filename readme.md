@@ -14,6 +14,8 @@ The Contacts App is a feature-rich web application built using Django, designed 
 
 - **Filter by Birthday:** Easily view contacts whose birthdays are today.
 
+- **Import and Export Csv:** Import and Export Contacts From and To Csv File.
+
 - **Profile Pictures:** Personalize the contact list by uploading profile pictures for each contact.
 
 - **Validation:** Robust validation mechanisms ensure data integrity, prompting users for correct input of phone numbers, email addresses, and birthdays.
