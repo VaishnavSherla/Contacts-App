@@ -2,6 +2,24 @@
 
 The Contacts App is a feature-rich web application built using Django, designed to streamline contact management efficiently. With an intuitive user interface and advanced features, this app allows users to organize, categorize, and maintain their contacts seamlessly.
 
+## Features
+
+- **User-friendly Interface:** The Contacts App uses Bootstrap and offers a simple and intuitive user interface, making it easy for users to navigate and manage contacts efficiently.
+
+- **Contact Details:** Add comprehensive details for each contact, such as first and last names, phone numbers, email addresses, addresses, company names, birthdays, and more.
+
+- **Categorization:** Categorize contacts based on their roles and relationships, allowing quick access and efficient organization.
+
+- **Filter by Favourites:** Easily view contacts who are marked as favourites.
+
+- **Filter by Birthday:** Easily view contacts whose birthdays are today.
+
+- **Profile Pictures:** Personalize the contact list by uploading profile pictures for each contact.
+
+- **Validation:** Robust validation mechanisms ensure data integrity, prompting users for correct input of phone numbers, email addresses, and birthdays.
+
+- **Change Password:** Users can update their account passwords securely.
+
 ## Screenshots
 **Home Page**
 ![Contact Index Page](Screenshots/index.png)
@@ -38,22 +56,47 @@ env\Scripts\activate  # On Windows
 source env/bin/activate  # On macOS/Linux
 pip install -r requirements.txt
 ```
+Apologies for the confusion. After creating the superuser, you need to access the admin panel to create the user profile. Here's the correct sequence:
 
-### Database Setup
+### Database Setup and Admin Access
 
-1. Create and apply database migrations:
+1. **Set up the database:**
 
-```
-python manage.py makemigrations
-python manage.py makemigrations ContactsApp
-python manage.py migrate
-```
+   Run the following commands to apply the necessary migrations:
 
-2. Create a superuser to access the admin interface:
+   ```
+   python manage.py makemigrations
+   python manage.py makemigrations ContactsApp
+   python manage.py migrate
+   ```
 
-```
-python manage.py createsuperuser
-```
+2. **Create a superuser for admin access:**
+
+   ```
+   python manage.py createsuperuser
+   ```
+
+3. **Run the development server:**
+
+   Start the development server with the following command:
+
+   ```
+   python manage.py runserver
+   ```
+
+4. **Access the admin panel:**
+
+   Go to `http://127.0.0.1:8000/admin/` in your web browser and log in using the superuser credentials.
+
+5. **Create a user profile:**
+
+   In the "Profiles" section of the admin panel, create a new profile for the superuser by providing the necessary details and saving the profile.
+
+6. **Access the site using admin credentials:**
+
+   After creating the user profile, you can access the site using the admin credentials and the associated user profile.
+
+Now you're all set to manage and use the Contacts App for efficient contact management!
 
 ### Generate Sample Data (Optional)
 This command will generate sample data which create user accounts with username and password that are the same. 
@@ -66,26 +109,5 @@ If you want to populate the database with sample data for testing, use the follo
 python manage.py generatedata
 ```
 
-## Features
-
-- **User-friendly Interface:** The Contacts App uses Bootstrap and offers a simple and intuitive user interface, making it easy for users to navigate and manage contacts efficiently.
-
-- **Contact Details:** Add comprehensive details for each contact, such as first and last names, phone numbers, email addresses, addresses, company names, birthdays, and more.
-
-- **Categorization:** Categorize contacts based on their roles and relationships, allowing quick access and efficient organization.
-
-- **Favorites:** Mark essential contacts as favorites for instant access from the favorites list.
-
-- **Profile Pictures:** Personalize the contact list by uploading profile pictures for each contact.
-
-- **Validation:** Robust validation mechanisms ensure data integrity, prompting users for correct input of phone numbers, email addresses, and birthdays.
-
-- **Change Password:** Users can update their account passwords securely.
-
-- **Filter by Birthday:** View contacts based on their upcoming birthdays.
-
-## Feedback
-
-We appreciate user feedback to improve the Contacts App further. Feel free to open issues, suggest improvements, or share your thoughts with us.
-
-Enjoy using the Contacts App for efficient contact management!
+For feedback or any inquiries, feel free to contact and connect with me on LinkedIn:
+[LinkedIn](https://www.linkedin.com/in/vaishnav-sherla/)
