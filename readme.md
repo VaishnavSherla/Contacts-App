@@ -52,8 +52,6 @@ env\Scripts\activate  # On Windows
 source env/bin/activate  # On macOS/Linux
 pip install -r requirements.txt
 ```
-Apologies for the confusion. After creating the superuser, you need to access the admin panel to create the user profile. Here's the correct sequence:
-
 ### Database Setup and Admin Access
 
 1. **Set up the database:**
